@@ -1,53 +1,201 @@
-main{
-    width: 1000px;
-    margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
 }
-.player-section{
-    background-color: aqua;
-    padding: 30px 0;
-    padding-left: 12%;
+/* Menu CSS*/
+.header, .banner{
+    background-color: #FFFBF0;
+}
+.navbar-brand img{
+    width: 350px;
+}
+.main-nav .navbar-nav .nav-link{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+/* banner CSS*/
+.banner{
+    padding: 20px 0 50px 0;
+}
+.banner-content {
+    padding: 100px 60px 0 0;
+}
+.banner-content h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.banner-content h1.highlights{
+    color:#FA804C;
+}
+.banner-content p{
+    padding: 15px 0;
+}
+.penguin-btn{
+    font-size: 14px;
+    background-color: #76C27E;
+    text-transform: uppercase;
+    color: white;
+    padding: 12px 36px;
+    border-radius: 50px;
+}
+.penguin-btn:hover{
+    background-color: #FA804C; 
+    color: white;   
+}
+.penguin-btn i{
+    padding-right: 10px;
+}
+/* Products CSS */
+.section-title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.women-products{
+    padding: 80px 0;
+}
+.women-product{
+    border: none;
+    padding: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+}
+.women-product img{
+    padding: 30px;
+    background-color: #F1F1F1;
+}
+.women-product .card-footer{
+    border: none;
+    background-color: transparent;
+}
+.card-footer .price{
+    color: #FA804C;
+    font-weight: 700;;
+}
+/* Features CSS */
+.features{
+    padding: 100px 0;
+}
+.features-img img{
+    margin-left: 50px;
+}
+.feature{
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    margin-bottom: 20px;
     border-radius: 15px;
-    margin-bottom: 50px;
-    clear: both;
-    overflow: hidden;
+    /* padding: 20px; */
 }
-.top-players{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.feature img{
+    width: 100px;
+    padding: 20px 0 20px 20px;
 }
-.top-blogs,.latest-courses{
-    background-color: aqua;
-    padding: 30px;    
-    border-radius: 15px;
-    margin-bottom: 50px;
+.feature h5{
+    font-weight: 700;
 }
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Footer CSS */
+.footer{
+    padding-top: 100px;
+    background-color: #24262b;
 }
-.courser{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+.info-title, .footer-info-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    position: relative;
 }
-.course img{
-    width: 200px;
+.info-title::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    position: absolute;
 }
-.blog{
-    display: flex;
-    align-items: center;
+.footer-nav .nav-link{
+    padding-left: 0;
+    color: #9b9b97;
 }
-.blog-img {
-    margin: 20px 20px 0 0;
+.footer-nav .nav-link:hover{
+    padding-left: 0;
+    color: #ffffff;
 }
-.blog-img img{
-    width: 200px;
+.about{
+    color: #9b9b97; 
 }
-.player{
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
+.about ul{
+    padding: 0;
 }
-.player img{
-    height: 50px;
-    margin-right: 10px;
+.about ul li{
+    list-style: none;
 }
+.about ul li i{
+    color: white;
+    padding-right: 15px;
+}
+.footer-bottom{
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #9b9b97;
+}
+.copyright{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #9b9b97;
+    color: #9b9b97;
+    padding-bottom: 40px;
+}
+.copyright p{   
+    font-size: 15px;
+}
+.follow ul{
+    padding: 0;
+}
+.follow ul li{
+    display: inline;
+}
+.follow ul li a{
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+.btn-subscribe{
+    background-color: #76C27E;
+    border: 1px solid #76C27E;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-brand img{
+        width: 220px;
+    }
+    .banner-content h1 {
+        font-size: 42px;
+    }
+    .banner-content {
+        padding: 30px 0px 0 0;
+    }
+    .banner-img {
+        padding-top: 40px;
+    }
+    .section-title h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .feature {
+        text-align: center;
+    }
+    .feature img {
+        padding: 20px 0 0 0;
+    }
+    .features-img img {
+        margin-left: 0;
+    }
+    .info-box {
+        padding-top: 20px;
+    }
+  }
